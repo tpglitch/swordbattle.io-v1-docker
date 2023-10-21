@@ -1,0 +1,6 @@
+inserthost.tpglit.ch {
+  reverse_proxy swordbattleio:3300 {
+    header_up Host {upstream_host}
+  }
+}
+
